@@ -1,0 +1,24 @@
+### Test get /
+
+GET http://localhost:8000/
+
+### Test get / dashboard
+
+GET http://localhost:8000/dashboard
+
+###API Endpoint
+
+GET http://localhost:8000/api/data
+
+### Data Endpoint for adding a user
+
+POST http://localhost:8000/api/data
+Content-Type: application/json
+
+{
+  "name" : "gilly"
+}
+
+### Delete endpoint
+
+DELETE http://localhost:8000/api/data
