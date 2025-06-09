@@ -10,6 +10,8 @@ const __filename = fileURLToPath(import.meta.url)
 //Get the directory name from the file path
 
 const __dirname = dirname(__filename)
+//middleware
+app.use(express.json())
 
 //serves the html file form the public directory
 //tells express to serve all files form the public folder as static assets
