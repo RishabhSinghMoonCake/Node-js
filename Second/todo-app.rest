@@ -10,7 +10,7 @@ Content-Type: application/json
   "password":"Singh"
 }
 
-###
+### LOGIN
 
 POST http://localhost:5000/auth/login
 Content-Type: application/json
@@ -18,4 +18,17 @@ Content-Type: application/json
 {
   "username":"Rishabh",
   "password":"Singh"
+}
+
+### Fetch all todos GET /TODOS
+GET http://localhost:5000/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ5NTQ3OTAxLCJleHAiOjE3NDk2MzQzMDF9.MBqr4Pr8sFEJdCmWUc03zYdYNFU4jSq6aLUQ5Yh6rV4
+
+### Creates todo
+POST http://localhost:5000/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ5NTQ3OTAxLCJleHAiOjE3NDk2MzQzMDF9.MBqr4Pr8sFEJdCmWUc03zYdYNFU4jSq6aLUQ5Yh6rV4
+Content-Type: application/json
+
+{
+  "task":"Finish coding"
 }
