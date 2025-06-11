@@ -1,0 +1,49 @@
+### GET / 
+GET http://localhost:8000/
+
+### REGISTER A USER
+POST http://localhost:8000/auth/register
+Content-Type: application/json
+
+{
+  "username":"Rishabh",
+  "password":"Singh"
+}
+
+### LOGIN
+
+POST http://localhost:8000/auth/login
+Content-Type: application/json
+
+{
+  "username":"Rishabh",
+  "password":"Singh"
+}
+
+### Fetch all todos GET /TODOS
+GET http://localhost:8000/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ5NjI4OTExLCJleHAiOjE3NDk3MTUzMTF9.-n_Sbo9meh_-dRun9CznoiJYrsC5XfMhP7J3TY2m0AY
+
+### Creates todo
+POST http://localhost:8000/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ5NjI4OTExLCJleHAiOjE3NDk3MTUzMTF9.-n_Sbo9meh_-dRun9CznoiJYrsC5XfMhP7J3TY2m0AY
+Content-Type: application/json
+
+{
+  "task":"Finish coding"
+}
+
+### Updates 2nd todo
+
+PUT http://localhost:8000/todos/2
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ5NjI4OTExLCJleHAiOjE3NDk3MTUzMTF9.-n_Sbo9meh_-dRun9CznoiJYrsC5XfMhP7J3TY2m0AY
+Content-Type: application/json
+
+{
+  "completed":1
+}
+
+###Delete a todo
+
+DELETE http://localhost:8000/todos/2
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ5NjI4OTExLCJleHAiOjE3NDk3MTUzMTF9.-n_Sbo9meh_-dRun9CznoiJYrsC5XfMhP7J3TY2m0AY
